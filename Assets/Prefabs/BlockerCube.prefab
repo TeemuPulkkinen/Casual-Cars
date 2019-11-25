@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8464010244763078324}
   - component: {fileID: 2256719490724990991}
   - component: {fileID: 7461092192479092275}
+  - component: {fileID: 1876036882938919479}
   m_Layer: 0
   m_Name: BlockerCube
   m_TagString: Untagged
@@ -127,3 +128,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1876036882938919479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596037213431182052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a953580faa3a349ad564e5b21c8bf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blockerSpeed: 3

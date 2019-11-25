@@ -5,7 +5,7 @@ using UnityEngine;
 public class Blocker : MonoBehaviour
 {
     public float blockerSpeed;
-    public Rigidbody2D rb2d;
+    private Rigidbody2D rb2d;
     
     // Start is called before the first frame update
     void Start()
