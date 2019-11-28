@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     private Vector3 touchPosition;
     private Rigidbody2D rb;
+    private BoxCollider2D boxCollider;
     private Vector3 direction;
     [SerializeField]
     private float moveSpeed = 10f;
@@ -14,6 +15,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        boxCollider = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -32,5 +34,7 @@ public class PlayerController : MonoBehaviour
                 rb.velocity = Vector2.zero;
             }
         }
+
     }
+
 }
