@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     private BoxCollider2D boxCollider;
     private Vector3 direction;
     [SerializeField]
-    private float moveSpeed = 10f;
+    private float moveSpeed = 3f;
     
     // Start is called before the first frame update
     void Start()
@@ -26,8 +26,9 @@ public class PlayerController : MonoBehaviour
             Touch touch = Input.GetTouch(0);
             touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
             touchPosition.z = 0;
-            direction = (touchPosition - transform.position);
-            rb.velocity = new Vector2(direction.x, direction.y) * moveSpeed;
+            direction = touchPosition - transform.position;
+            Vector2 movementVector = new Vector2(direction.x, direction.y);
+            rb.velocity = movementVector * moveSpeed;
 
             if (touch.phase == TouchPhase.Ended)
             {

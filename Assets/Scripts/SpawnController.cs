@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameController : MonoBehaviour
+public class SpawnController : MonoBehaviour
 {
     // Variables related to spawning blockers
     public GameObject blocker;
